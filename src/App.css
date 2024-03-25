@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:opsz,wght@9..40,600;9..40,800&family=Fauna+One&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.app {
+  margin: auto;
+}
+
+.image{
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto;
+}
+
+.hero__title {
+  @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold;
+}
+
+ .hero__subtitle {
+  @apply text-[27px]  font-light mt-5;
+} 
+
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full ;
+}
+
+.hero__image {
+  @apply relative xl:w-full w-[100%] xl:h-full h-[590px] z-0;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.input {
+  @apply h-[40px] rounded-[8px] w-full outline-none px-6 ;
+}
+
+.btn {
+  @apply h-[40px] flex justify-center items-center rounded-[8px] px-10 py-[10px] text-sm uppercase font-bold;
+}
+
+.search-result-content {
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+  .start-msg {
+      text-align: center;
+      margin-top: 20px;
+      color: rgba(0, 0, 0, 0.5);
+  }
+  .search-results {
+      height: calc(100vh - 110px);
+      overflow: auto;
+      margin: 20px 0;
+  }
+      .search-result-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+      }
+          .image-container {
+              background-color: rgba(0, 0, 0, 0.05);
+              width: 60px;
+              height: 60px;
+              border-radius: 60px;
+              flex-shrink: 0;
+          }
+              img {
+                  width: 100%;
+                  height: 100%;
+              }
+          .prod-details {
+              overflow: hidden;
+          }
+              .name {
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  font-size: 16px;
+                  line-height: 1;
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                  display: block;
+              }
+              .desc {
+                  font-size: 14px;
+                  line-height: 1;
+                  display: block;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  color: rgba(0, 0, 0, 0.5);
+              }
